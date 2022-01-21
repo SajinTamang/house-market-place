@@ -1,15 +1,16 @@
 import React from 'react';
 
-import { BrowserRouter as Router, Routes,Route } from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 import  "./index.css";
 
 import Navbar from './components/Navbar';
-import Explore from './pages/Explore';
-import ForgotPassword from './pages/ForgotPassword';
-import Offers from './pages/Offers';
-import SignIn from './pages/SignIn';
-import SignUp from './pages/SignUp';
+import Explore from "./pages/Explore";
+import ForgotPassword from "./pages/ForgotPassword";
+import Offers from "./pages/Offers";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
+
 function App() {
   return (
     <>
@@ -22,9 +23,8 @@ function App() {
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
         </Routes>
-
-        <Navbar />
       </Router>
+      <Navbar />
     </>
   );
 }
