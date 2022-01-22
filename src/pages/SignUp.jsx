@@ -8,6 +8,8 @@ import  visibilityIcon from "../assets/svg/visibilityIcon.svg";
 import "./css/SignIn.css";
 import { toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
+import OAuth from '../components/OAuth';
+
 
 function SignUp() {
   const [showPassword, setShowPassword] = useState(false);
@@ -110,7 +112,7 @@ navigate("/");
           </div>
         </form>
 
-        {/* Google Authentication */}
+       <OAuth/>
         <Link to="/sign-in" className='registerLink'>
           Sign In Instead
         </Link>

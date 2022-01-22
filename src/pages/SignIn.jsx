@@ -6,7 +6,7 @@ import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import {ReactComponent as ArrowRightIcon} from "../assets/svg/keyboardArrowRightIcon.svg";
 import  visibilityIcon from "../assets/svg/visibilityIcon.svg";
 import "./css/SignIn.css";
-
+import OAuth from '../components/OAuth';
 
 function SignIn() {
 
@@ -82,7 +82,8 @@ function SignIn() {
           </div>
         </form>
 
-        {/* Google Authentication */}
+       <OAuth/>
+
         <Link to="/sign-up" className='registerLink'>
           Sign up Instead
         </Link>
